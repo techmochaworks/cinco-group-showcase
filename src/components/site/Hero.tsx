@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { PROPERTIES } from "@/data/site";
 
 const slides = [
-  { image: PROPERTIES[1].images[0], title: "Stay Elevated in Hyderabad" },
-  { image: PROPERTIES[3].images[3], title: "Five Properties, One Standard" },
-  { image: PROPERTIES[0].images[1], title: "Comfort That Feels Like Home" },
+  { image: PROPERTIES[1]!.images[0]!, title: "Stay Elevated in Hyderabad" },
+  { image: PROPERTIES[3]!.images[3]!, title: "Five Properties, One Standard" },
+  { image: PROPERTIES[0]!.images[1]!, title: "Comfort That Feels Like Home" },
 ];
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
             The Cinco Group of Hotels
           </span>
           <h1 className="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] text-deep-foreground md:text-6xl">
-            {slides[index].title}
+            {slides[index]!.title}
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-deep-foreground/80">
             Five thoughtfully located hotels across Hyderabad, blending modern luxury with
