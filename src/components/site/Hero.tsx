@@ -63,7 +63,7 @@ export function Hero() {
         </button>
       </div>
 
-      <div className="mx-auto -mt-24 max-w-6xl px-5">
+      <div className="relative z-10 mx-auto -mt-24 max-w-6xl px-5">
         <form
           onSubmit={(e) => e.preventDefault()}
           className="grid grid-cols-1 overflow-hidden rounded-sm bg-card shadow-lift md:grid-cols-[1.1fr_1fr_0.9fr_auto]"
