@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogsRouteImport } from './routes/blogs'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as PropertiesRouteImport } from './routes/properties'
 import { Route as PropertySlugRouteImport } from './routes/property.$slug'
@@ -29,6 +30,11 @@ const AboutRoute = AboutRouteImport.update({
 const BlogsRoute = BlogsRouteImport.update({
   id: '/blogs',
   path: '/blogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blogs': typeof BlogsRoute
+  '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/properties': typeof PropertiesRoute
   '/property/$slug': typeof PropertySlugRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blogs': typeof BlogsRoute
+  '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/properties': typeof PropertiesRoute
   '/property/$slug': typeof PropertySlugRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blogs': typeof BlogsRoute
+  '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/properties': typeof PropertiesRoute
   '/property/$slug': typeof PropertySlugRoute
@@ -75,14 +84,28 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/about' | '/blogs' | '/gallery' | '/properties' | '/property/$slug'
+    | '/'
+    | '/about'
+    | '/blogs'
+    | '/contact'
+    | '/gallery'
+    | '/properties'
+    | '/property/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/blogs' | '/gallery' | '/properties' | '/property/$slug'
+  to:
+    | '/'
+    | '/about'
+    | '/blogs'
+    | '/contact'
+    | '/gallery'
+    | '/properties'
+    | '/property/$slug'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/blogs'
+    | '/contact'
     | '/gallery'
     | '/properties'
     | '/property/$slug'
@@ -92,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BlogsRoute: typeof BlogsRoute
+  ContactRoute: typeof ContactRoute
   GalleryRoute: typeof GalleryRoute
   PropertiesRoute: typeof PropertiesRoute
   PropertySlugRoute: typeof PropertySlugRoute
@@ -118,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/blogs'
       fullPath: '/blogs'
       preLoaderRoute: typeof BlogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -148,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BlogsRoute: BlogsRoute,
+  ContactRoute: ContactRoute,
   GalleryRoute: GalleryRoute,
   PropertiesRoute: PropertiesRoute,
   PropertySlugRoute: PropertySlugRoute,
