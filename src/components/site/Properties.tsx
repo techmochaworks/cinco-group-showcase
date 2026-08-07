@@ -5,7 +5,7 @@ export function Properties() {
   return (
     <section id="properties" className="mx-auto max-w-7xl px-5 py-24">
       <div className="mb-14 text-center">
-        <span className="rounded-sm bg-secondary px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">
+        <span className="rounded-xl bg-secondary px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">
           Our Properties
         </span>
         <h2 className="mt-5 font-display text-4xl font-extrabold text-foreground md:text-5xl">
@@ -17,7 +17,7 @@ export function Properties() {
         {PROPERTIES.map((p) => (
           <article
             key={p.name}
-            className="group relative overflow-hidden rounded-sm bg-card shadow-soft transition-shadow hover:shadow-lift"
+            className="group relative overflow-hidden rounded-xl bg-card shadow-soft transition-shadow hover:shadow-lift"
           >
             <div className="h-72 overflow-hidden">
               <img
@@ -27,7 +27,7 @@ export function Properties() {
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="relative mx-5 -mt-16 rounded-sm bg-card p-6 shadow-soft">
+            <div className="relative mx-5 -mt-16 rounded-xl bg-card p-6 shadow-soft">
               <span className="border-b-2 border-gold pb-0.5 text-sm font-semibold text-primary">
                 {p.area}
               </span>

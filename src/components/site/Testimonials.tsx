@@ -10,7 +10,7 @@ export function Testimonials() {
     <section className="bg-sand py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
         <div>
-          <span className="rounded-sm bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
+          <span className="rounded-xl bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
             Our Testimonials
           </span>
           <h2 className="mt-5 font-display text-4xl font-extrabold leading-tight text-foreground md:text-5xl">
@@ -35,7 +35,7 @@ export function Testimonials() {
         </div>
 
         <div className="relative">
-          <div className="relative overflow-hidden rounded-sm bg-card p-10 shadow-lift">
+          <div className="relative overflow-hidden rounded-xl bg-card p-10 shadow-lift">
             <span className="absolute right-0 top-0 flex h-24 w-24 items-start justify-end rounded-bl-full bg-gold p-4">
               <Quote className="h-6 w-6 text-gold-foreground" />
             </span>

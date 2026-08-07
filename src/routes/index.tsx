@@ -1,14 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Properties } from "@/components/site/Properties";
 import { Achievements } from "@/components/site/Achievements";
 import { Venue } from "@/components/site/Venue";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Testimonials } from "@/components/site/Testimonials";
-import { Founders } from "@/components/site/Founders";
-import { GuestsAndGallery } from "@/components/site/GuestsAndGallery";
-import { Footer } from "@/components/site/Footer";
+import { BlogsPreview } from "@/components/site/BlogsPreview";
+import { GalleryStrip } from "@/components/site/GalleryStrip";
 
 const title = "The Cinco Group of Hotels | Stays Across Hyderabad";
 const description =
@@ -33,19 +31,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main>
-        <Hero />
-        <Properties />
-        <Achievements />
-        <Venue />
-        <CtaBanner />
-        <Testimonials />
-        <Founders />
-        <GuestsAndGallery />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Hero />
+      <Properties />
+      <Achievements />
+      <Venue />
+      <CtaBanner />
+      <Testimonials />
+      <BlogsPreview />
+      <GalleryStrip />
+    </>
   );
 }

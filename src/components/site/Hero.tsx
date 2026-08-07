@@ -35,7 +35,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-linear-to-r from-deep/85 via-deep/55 to-transparent" />
 
         <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-32">
-          <span className="mb-4 w-fit rounded-sm border border-gold/60 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.3em] text-gold">
+          <span className="mb-4 w-fit rounded-xl border border-gold/60 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.3em] text-gold">
             The Cinco Group of Hotels
           </span>
           <h1 className="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] text-deep-foreground md:text-6xl">
@@ -66,7 +66,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto -mt-24 max-w-6xl px-5">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="grid grid-cols-1 overflow-hidden rounded-sm bg-card shadow-lift md:grid-cols-[1.1fr_1fr_0.9fr_auto]"
+          className="grid grid-cols-1 overflow-hidden rounded-xl bg-card shadow-lift md:grid-cols-[1.1fr_1fr_0.9fr_auto]"
         >
           <label className="flex items-center gap-3 border-b border-border px-6 py-5 md:border-b-0 md:border-r">
             <MapPin className="h-5 w-5 shrink-0 text-primary" />

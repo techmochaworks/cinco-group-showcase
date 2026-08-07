@@ -28,15 +28,15 @@ export function Venue() {
             src={PROPERTIES[3]!.images[5]}
             alt="Banquet and dining space"
             loading="lazy"
-            className="h-[520px] w-full rounded-tr-[80px] rounded-sm object-cover shadow-lift"
+            className="h-[520px] w-full rounded-tr-[80px] rounded-xl object-cover shadow-lift"
           />
           <img
             src={PROPERTIES[1]!.images[6]}
             alt="Event seating setup"
             loading="lazy"
-            className="absolute -bottom-8 -left-4 hidden h-44 w-64 rounded-sm border-4 border-background object-cover shadow-lift md:block"
+            className="absolute -bottom-8 -left-4 hidden h-44 w-64 rounded-xl border-4 border-background object-cover shadow-lift md:block"
           />
-          <div className="absolute -bottom-8 right-6 hidden items-center gap-3 rounded-sm border-2 border-gold bg-card px-6 py-4 shadow-soft md:flex">
+          <div className="absolute -bottom-8 right-6 hidden items-center gap-3 rounded-xl border-2 border-gold bg-card px-6 py-4 shadow-soft md:flex">
             <span className="font-display text-4xl font-extrabold text-gradient-gold">5+</span>
             <span className="text-sm font-semibold leading-tight text-foreground">
               Years of
@@ -47,7 +47,7 @@ export function Venue() {
         </div>
 
         <div>
-          <span className="rounded-sm bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
+          <span className="rounded-xl bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
             About Us
           </span>
           <h2 className="mt-5 font-display text-4xl font-extrabold leading-tight text-foreground md:text-5xl">
@@ -58,7 +58,7 @@ export function Venue() {
             {items.map((i) => (
               <div
                 key={i.title}
-                className="flex gap-5 rounded-sm border border-border bg-card p-6 transition-shadow hover:shadow-soft"
+                className="flex gap-5 rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-soft"
               >
                 <i.icon className="h-8 w-8 shrink-0 text-gold" />
                 <div>
