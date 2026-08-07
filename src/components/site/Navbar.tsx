@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, UserRound, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
@@ -18,9 +18,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-xl surface-deep font-display text-lg font-bold">
-            C
-          </span>
+          
           <span className="leading-tight">
             <span className="block font-display text-lg font-bold tracking-tight text-foreground">
               THE CINCO
@@ -52,9 +50,7 @@ export function Navbar() {
           >
             Book a Stay
           </Link>
-          <span className="hidden h-10 w-10 items-center justify-center rounded-full bg-secondary text-primary lg:flex">
-            <UserRound className="h-5 w-5" />
-          </span>
+          
           <button
             aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
