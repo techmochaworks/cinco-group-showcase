@@ -1,9 +1,19 @@
+import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import { GROUP, PROPERTIES } from "@/data/site";
 
+const links = [
+  { label: "Home", to: "/" },
+  { label: "Our Properties", to: "/properties" },
+  { label: "About Us", to: "/about" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Blogs", to: "/blogs" },
+  { label: "Contact Us", to: "/contact" },
+] as const;
+
 export function Footer() {
   return (
-    <footer id="contact" className="surface-deep">
+    <footer className="surface-deep">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold font-display text-xl font-bold text-gold-foreground">
@@ -14,7 +24,7 @@ export function Footer() {
             Group of Hotels
           </p>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-deep-foreground/75">
-            Our guests love the comfort, hospitality and convenience we provide.
+            Five hotels across Hyderabad, run to one standard since 2019.
           </p>
           <div className="mt-6 flex gap-3">
             {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
@@ -31,11 +41,11 @@ export function Footer() {
         <div>
           <h3 className="font-display text-base font-bold text-gold">Useful Links</h3>
           <ul className="mt-5 space-y-3 text-sm text-deep-foreground/75">
-            {["Home", "Our Properties", "About Us", "Blogs", "Contact Us"].map((l) => (
-              <li key={l}>
-                <a href="#properties" className="transition-colors hover:text-gold">
-                  {l}
-                </a>
+            {links.map((l) => (
+              <li key={l.label}>
+                <Link to={l.to} className="transition-colors hover:text-gold">
+                  {l.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -45,15 +55,14 @@ export function Footer() {
           <h3 className="font-display text-base font-bold text-gold">Our Properties</h3>
           <ul className="mt-5 space-y-3 text-sm text-deep-foreground/75">
             {PROPERTIES.map((p) => (
-              <li key={p.name}>
-                <a
-                  href={p.bookLink}
-                  target="_blank"
-                  rel="noreferrer"
+              <li key={p.slug}>
+                <Link
+                  to="/property/$slug"
+                  params={{ slug: p.slug }}
                   className="transition-colors hover:text-gold"
                 >
                   {p.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
