@@ -95,7 +95,7 @@ function PropertyPage() {
 
           <h3 className="mt-12 font-display text-xl font-extrabold text-foreground">Photos</h3>
           <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3">
-            {p.images.slice(1, 10).map((src, i) => (
+            {p.images.slice(1, 10).map((src: string, i: number) => (
               <img
                 key={src}
                 src={src}
