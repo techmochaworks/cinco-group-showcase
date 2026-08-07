@@ -4,7 +4,7 @@ export function CtaBanner() {
   return (
     <section className="bg-sand py-8">
       <div className="mx-auto max-w-7xl px-5">
-        <div className="flex flex-col items-start gap-6 rounded-sm surface-deep px-8 py-12 md:flex-row md:items-center md:justify-between md:px-14">
+        <div className="flex flex-col items-start gap-6 rounded-xl surface-deep px-8 py-12 md:flex-row md:items-center md:justify-between md:px-14">
           <div className="flex items-center gap-6">
             <BedDouble className="hidden h-12 w-12 text-gold md:block" />
             <div>
@@ -18,7 +18,7 @@ export function CtaBanner() {
           </div>
           <a
             href="#contact"
-            className="rounded-sm bg-gold px-8 py-4 text-sm font-bold text-gold-foreground transition-opacity hover:opacity-90"
+            className="rounded-xl bg-gold px-8 py-4 text-sm font-bold text-gold-foreground transition-opacity hover:opacity-90"
           >
             Contact Us Now
           </a>

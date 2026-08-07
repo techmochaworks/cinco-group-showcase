@@ -12,7 +12,7 @@ export function GuestsAndGallery() {
   return (
     <section id="blogs" className="py-24">
       <div className="mx-auto max-w-7xl px-5 text-center">
-        <span className="rounded-sm bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
+        <span className="rounded-xl bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-accent-foreground">
           Guests
         </span>
         <h2 className="mt-5 font-display text-3xl font-extrabold text-foreground md:text-4xl">

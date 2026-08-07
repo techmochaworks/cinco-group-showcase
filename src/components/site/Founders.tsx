@@ -4,7 +4,7 @@ export function Founders() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-24">
       <div className="mb-14 text-center">
-        <span className="rounded-sm bg-secondary px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">
+        <span className="rounded-xl bg-secondary px-3 py-1 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">
           Leadership
         </span>
         <h2 className="mt-5 font-display text-4xl font-extrabold text-foreground md:text-5xl">
@@ -19,7 +19,7 @@ export function Founders() {
       <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
         {FOUNDERS.map((f) => (
           <div key={f.name} className="group text-center">
-            <div className="overflow-hidden rounded-sm bg-secondary">
+            <div className="overflow-hidden rounded-xl bg-secondary">
               <img
                 src={f.image}
                 alt={f.name}

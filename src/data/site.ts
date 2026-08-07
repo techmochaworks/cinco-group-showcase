@@ -10,7 +10,9 @@ export const GROUP = {
 
 export type Property = {
   name: string;
+  slug: string;
   area: string;
+  description: string;
   bookLink: string;
   images: string[];
 };
@@ -18,7 +20,10 @@ export type Property = {
 export const PROPERTIES: Property[] = [
   {
     name: "Super Townhouse THE CINCO HOTEL",
-    area: "Hyderabad",
+    slug: "cinco-hotel",
+    area: "Ameerpet",
+    description:
+      "Our flagship address — compact, immaculate rooms a short drive from the business district, built for travellers who want a dependable base in the middle of everything.",
     bookLink: "https://www.oyorooms.com/105415/",
     images: [
       "https://i.postimg.cc/762Lq8DF/2020-11-23.jpg",
@@ -34,7 +39,10 @@ export const PROPERTIES: Property[] = [
   },
   {
     name: "FabHotel The Cinco Primera",
-    area: "Hyderabad",
+    slug: "cinco-primera",
+    area: "Kondapur",
+    description:
+      "The most recent addition to the group. Larger rooms, warmer interiors and a breakfast service that regulars plan their mornings around.",
     bookLink:
       "https://www.fabhotels.com/hotels-in-hyderabad/fabhotel-the-cinco-primera-nptktbwh.html",
     images: [
@@ -59,7 +67,10 @@ export const PROPERTIES: Property[] = [
   },
   {
     name: "Super Townhouse 359 Begumpet",
+    slug: "townhouse-359-begumpet",
     area: "Begumpet",
+    description:
+      "Quiet floors minutes from Begumpet station and the airport road — the property our long-stay corporate guests keep coming back to.",
     bookLink: "https://www.oyorooms.com/105473/",
     images: [
       "https://i.postimg.cc/fyxzGcZ2/2023-05-24.webp",
@@ -80,7 +91,10 @@ export const PROPERTIES: Property[] = [
   },
   {
     name: "The Cinco Bliss",
-    area: "Hyderabad",
+    slug: "cinco-bliss",
+    area: "Gachibowli",
+    description:
+      "Bright rooms, a banquet floor for small functions and a team that handles late arrivals without fuss.",
     bookLink: "https://www.oyorooms.com/223489/",
     images: [
       "https://i.postimg.cc/TPwHBTGW/202505280133514398-629c6a02-df34-43df-91a9-533bf730e6a2.avif",
@@ -100,7 +114,10 @@ export const PROPERTIES: Property[] = [
   },
   {
     name: "Townhouse Near Secunderabad Railway Station",
+    slug: "townhouse-secunderabad",
     area: "Secunderabad",
+    description:
+      "Two minutes from the railway station. Practical, spotless and open around the clock for guests arriving on the early trains.",
     bookLink: "https://www.oyorooms.com/108004/",
     images: [
       "https://i.postimg.cc/gJ7LzqfM/2020-11-28.webp",
@@ -165,15 +182,53 @@ export const TESTIMONIALS = [
   },
 ];
 
-export const CORPORATES = [
-  "Justdial",
-  "Bajaj Finserv",
-  "Kotak",
-  "Reliance",
-  "Asian Paints",
-  "Axis Bank",
-  "Aurobindo",
-  "MEIL",
-  "Tanishq",
-  "HDFC Bank",
+
+export const AMENITIES = [
+  "Air-conditioned rooms",
+  "Free high-speed Wi-Fi",
+  "24x7 front desk",
+  "Daily housekeeping",
+  "Power backup",
+  "CCTV & secure entry",
+  "In-room dining",
+  "Free cancellation on most rates",
+];
+
+export type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  image: string;
+};
+
+export const POSTS: Post[] = [
+  {
+    slug: "48-hours-in-hyderabad",
+    title: "48 Hours in Hyderabad: A Weekend Worth Planning",
+    excerpt:
+      "Charminar at sunrise, biryani at noon, Golconda by evening. A two-day route our front desk teams have refined for guests over the years.",
+    date: "12 July 2026",
+    readTime: "6 min read",
+    image: PROPERTIES[1]!.images[3]!,
+  },
+  {
+    slug: "choosing-a-business-hotel",
+    title: "What Business Travellers Actually Look For in a Hotel",
+    excerpt:
+      "It is rarely the lobby. After thousands of corporate stays, here is what shows up again and again in guest feedback.",
+    date: "28 June 2026",
+    readTime: "4 min read",
+    image: PROPERTIES[2]!.images[5]!,
+  },
+  {
+    slug: "planning-a-banquet-function",
+    title: "Planning a Small Function: A Simple Checklist",
+    excerpt:
+      "Headcount, catering, timings and the details people forget. A practical guide before you book a banquet hall.",
+    date: "9 June 2026",
+    readTime: "5 min read",
+    image: PROPERTIES[3]!.images[7]!,
+  },
 ];

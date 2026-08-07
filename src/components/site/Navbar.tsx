@@ -17,7 +17,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-sm surface-deep font-display text-lg font-bold">
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl surface-deep font-display text-lg font-bold">
             C
           </span>
           <span className="leading-tight">
@@ -45,14 +45,14 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <button
             aria-label="Search"
-            className="hidden h-10 w-10 items-center justify-center rounded-sm text-foreground/70 transition-colors hover:text-primary lg:flex"
+            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:text-primary lg:flex"
           >
             <Search className="h-5 w-5" />
           </button>
           <span className="hidden h-6 w-px bg-border lg:block" />
           <a
             href="#contact"
-            className="hidden items-center justify-center rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 lg:inline-flex"
+            className="hidden items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 lg:inline-flex"
           >
             Book a Stay
           </a>
@@ -62,7 +62,7 @@ export function Navbar() {
           <button
             aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex h-10 w-10 items-center justify-center rounded-sm border border-border lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-xl border border-border lg:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

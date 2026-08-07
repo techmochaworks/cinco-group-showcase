@@ -6,7 +6,7 @@ export function Footer() {
     <footer id="contact" className="surface-deep">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-gold font-display text-xl font-bold text-gold-foreground">
+          <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold font-display text-xl font-bold text-gold-foreground">
             C
           </span>
           <p className="mt-5 font-display text-lg font-bold">THE CINCO</p>
