@@ -17,7 +17,7 @@ export function CtaBanner() {
             </div>
           </div>
           <a
-            href="#contact"
+            href="/contact"
             className="rounded-xl bg-gold px-8 py-4 text-sm font-bold text-gold-foreground transition-opacity hover:opacity-90"
           >
             Contact Us Now
