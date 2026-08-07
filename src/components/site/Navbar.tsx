@@ -1,14 +1,15 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Search, UserRound, X } from "lucide-react";
+import { Menu, UserRound, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
   { label: "Home", to: "/" },
-  { label: "Our Properties", to: "/#properties" },
-  { label: "About Us", to: "/#about" },
-  { label: "Blogs", to: "/#blogs" },
-  { label: "Contact Us", to: "/#contact" },
-];
+  { label: "Our Properties", to: "/properties" },
+  { label: "About Us", to: "/about" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Blogs", to: "/blogs" },
+  { label: "Contact Us", to: "/contact" },
+] as const;
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -30,32 +31,27 @@ export function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.to}
+              to={l.to}
+              activeOptions={{ exact: l.to === "/" }}
+              activeProps={{ className: "text-primary" }}
               className="text-sm font-semibold text-foreground/80 transition-colors hover:text-primary"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-4">
-          <button
-            aria-label="Search"
-            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:text-primary lg:flex"
-          >
-            <Search className="h-5 w-5" />
-          </button>
-          <span className="hidden h-6 w-px bg-border lg:block" />
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="hidden items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 lg:inline-flex"
           >
             Book a Stay
-          </a>
+          </Link>
           <span className="hidden h-10 w-10 items-center justify-center rounded-full bg-secondary text-primary lg:flex">
             <UserRound className="h-5 w-5" />
           </span>
@@ -72,14 +68,14 @@ export function Navbar() {
       {open && (
         <nav className="border-t border-border bg-background px-5 py-4 lg:hidden">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.to}
+              to={l.to}
               onClick={() => setOpen(false)}
               className="block py-2.5 text-sm font-semibold text-foreground/80"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
       )}
