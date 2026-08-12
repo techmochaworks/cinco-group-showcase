@@ -23,11 +23,11 @@ export const PROPERTIES: Property[] = [
     name: "FabHotel The Cinco Primera",
     slug: "cinco-primera",
 
-    
+
     area: "Kondapur",
     description:
       "The most recent addition to the group. Larger rooms, warmer interiors and a breakfast service that regulars plan their mornings around.",
-    bookLink: "https://wa.me/919014632639",
+    bookLink: "https://wa.me/919030514613",
     images: [
       "https://i.postimg.cc/1XRwX3tF/2025-05-21.webp",
       "https://i.postimg.cc/j54yR7Rk/2025-05-21-1.webp",
@@ -55,7 +55,7 @@ export const PROPERTIES: Property[] = [
     area: "Begumpet",
     description:
       "Quiet floors minutes from Begumpet station and the airport road — the property our long-stay corporate guests keep coming back to.",
-    bookLink: "https://wa.me/919014632639",
+    bookLink: "https://wa.me/918919609899",
     images: [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832376847.jpg?k=5c60a685c25e05f9df5aa1169ae80ee790dc4cce9933c23b187eb8913fef55bf&o=",
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/655262724.jpg?k=ec553563128504cb31d8c3fc888dda2631b6837f5116efce0afaf4cefc7b601e&o=",
@@ -80,7 +80,7 @@ export const PROPERTIES: Property[] = [
     area: "Ameerpet",
     description:
       "Our flagship address — compact, immaculate rooms a short drive from the business district, built for travellers who want a dependable base in the middle of everything.",
-    bookLink: "https://wa.me/919014632639",
+    bookLink: "https://wa.me/919030863537",
     images: [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826416075.jpg?k=38f345faefd521b1959f314d09bf459f7dd91b9265df9e70c5bca3f294d4efdc&o=",
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/617323707.jpg?k=d8dd1ddd3a50ce4c676eba9d549c4a4b37f5d5544cce0a09852a36569e1720a2&o=",
@@ -101,7 +101,7 @@ export const PROPERTIES: Property[] = [
     area: "Secunderabad",
     description:
       "Two minutes from the railway station. Practical, spotless and open around the clock for guests arriving on the early trains.",
-    bookLink: "https://wa.me/919014632639",
+    bookLink: "https://wa.me/916281288780",
     images: [
       "https://i.postimg.cc/gJ7LzqfM/2020-11-28.webp",
       "https://i.postimg.cc/85YfpBqL/2020-11-28-1.webp",
