@@ -22,6 +22,8 @@ export const PROPERTIES: Property[] = [
   {
     name: "FabHotel The Cinco Primera",
     slug: "cinco-primera",
+
+    
     area: "Kondapur",
     description:
       "The most recent addition to the group. Larger rooms, warmer interiors and a breakfast service that regulars plan their mornings around.",
