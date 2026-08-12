@@ -30,13 +30,13 @@ function AboutPage() {
         image={PROPERTIES[0]!.images[3]!}
       />
 
-      <section className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:gap-14 sm:py-20 lg:grid-cols-2">
         <div>
-          <h2 className="font-display text-3xl font-extrabold leading-tight text-foreground md:text-4xl">
+          <h2 className="font-display text-2xl font-extrabold leading-tight text-foreground sm:text-3xl md:text-4xl">
             Hospitality, run like a neighbourhood business
           </h2>
-          <p className="mt-6 leading-8 text-muted-foreground">{GROUP.about}</p>
-          <p className="mt-4 leading-8 text-muted-foreground">
+          <p className="mt-4 text-sm leading-7 text-muted-foreground sm:mt-6 sm:text-base sm:leading-8">{GROUP.about}</p>
+          <p className="mt-3 text-sm leading-7 text-muted-foreground sm:mt-4 sm:text-base sm:leading-8">
             We started in 2019 with a single property in Ameerpet and grew by fixing the things
             guests complained about most: unclear pricing, slow check-ins and rooms that looked
             nothing like their photographs. Every hotel we have added since is held to that same
@@ -44,7 +44,7 @@ function AboutPage() {
           </p>
           <Link
             to="/properties"
-            className="mt-8 inline-flex rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90"
+            className="mt-6 inline-flex rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90 sm:mt-8"
           >
             Explore our hotels
           </Link>
@@ -53,12 +53,12 @@ function AboutPage() {
           src={PROPERTIES[1]!.images[2]}
           alt="A Cinco Group hotel interior"
           loading="lazy"
-          className="h-[480px] w-full rounded-3xl object-cover shadow-lift"
+          className="h-72 w-full rounded-2xl object-cover shadow-lift sm:h-[480px] sm:rounded-3xl"
         />
       </section>
 
-      <section className="bg-sand py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-3">
+      <section className="bg-sand py-12 sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-5 px-5 sm:gap-6 md:grid-cols-3">
           {[
             {
               t: "Clean, always",
@@ -73,9 +73,9 @@ function AboutPage() {
               d: "Front desks are staffed 24x7 across all Our properties, including the early-train arrivals.",
             },
           ].map((v) => (
-            <div key={v.t} className="rounded-2xl bg-card p-8 shadow-soft">
-              <h3 className="font-display text-lg font-bold text-foreground">{v.t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{v.d}</p>
+            <div key={v.t} className="rounded-xl bg-card p-6 shadow-soft sm:rounded-2xl sm:p-8">
+              <h3 className="font-display text-base font-bold text-foreground sm:text-lg">{v.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:mt-3">{v.d}</p>
             </div>
           ))}
         </div>

@@ -34,15 +34,15 @@ function GalleryPage() {
         image={PROPERTIES[3]!.images[1]!}
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20">
-        <div className="columns-2 gap-4 md:columns-3 lg:columns-4">
+      <section className="mx-auto max-w-7xl px-5 py-12 sm:py-20">
+        <div className="columns-2 gap-3 sm:gap-4 md:columns-3 lg:columns-4">
           {images.map((img) => (
             <img
               key={img.src}
               src={img.src}
               alt={img.name}
               loading="lazy"
-              className="mb-4 w-full break-inside-avoid rounded-2xl object-cover transition-transform duration-500 hover:scale-[1.02]"
+              className="mb-3 w-full break-inside-avoid rounded-xl object-cover transition-transform duration-500 hover:scale-[1.02] sm:mb-4 sm:rounded-2xl"
             />
           ))}
         </div>

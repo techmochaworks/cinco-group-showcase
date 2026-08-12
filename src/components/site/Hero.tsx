@@ -20,7 +20,7 @@ export function Hero() {
 
   return (
     <section className="relative">
-      <div className="relative h-[760px] w-full overflow-hidden md:h-[760px]">
+      <div className="relative h-[520px] w-full overflow-hidden sm:h-[640px] md:h-[760px]">
         {slides.map((s, i) => (
           <img
             key={s.image}
@@ -33,20 +33,20 @@ export function Hero() {
         ))}
         <div className="absolute inset-0 bg-linear-to-r from-deep/85 via-deep/55 to-transparent" />
 
-        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-32">
+        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-36 sm:pb-32">
           <span className="mb-4 w-fit rounded-xl border border-gold/60 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.3em] text-gold">
             The Cinco Group of Hotels
           </span>
-          <h1 className="max-w-3xl font-display text-4xl font-extrabold leading-[1.08] text-deep-foreground md:text-6xl">
+          <h1 className="max-w-3xl font-display text-3xl font-extrabold leading-[1.08] text-deep-foreground sm:text-4xl md:text-6xl">
             {slides[index]!.title}
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-deep-foreground/80">
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-deep-foreground/80 sm:mt-5 sm:text-base">
             thoughtfully located hotels across Hyderabad, blending modern luxury with
             authentic Indian warmth — and priced for the way you travel.
           </p>
         </div>
 
-        {/* <button
+        {/* {<button
           aria-label="Previous slide"
           onClick={() => go(-1)}
           className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-background/85 text-foreground transition-colors hover:bg-background"
@@ -59,15 +59,15 @@ export function Hero() {
           className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-background/85 text-foreground transition-colors hover:bg-background"
         >
           <ChevronRight className="h-5 w-5" />
-        </button> */}
+        </button>} */}
       </div>
 
-      <div className="relative z-10 mx-auto -mt-35 max-w-6xl px-5">
+      <div className="relative z-10 mx-auto -mt-24 max-w-6xl px-5 sm:-mt-35">
         <form
           onSubmit={(e) => e.preventDefault()}
           className="grid grid-cols-1 overflow-hidden rounded-xl bg-card shadow-lift md:grid-cols-[1.1fr_1fr_0.9fr_auto]"
         >
-          <label className="flex items-center gap-3 border-b border-border px-6 py-5 md:border-b-0 md:border-r">
+          <label className="flex items-center gap-3 border-b border-border px-5 py-4 sm:px-6 sm:py-5 md:border-b-0 md:border-r">
             <MapPin className="h-5 w-5 shrink-0 text-primary" />
             <span className="w-full">
               <span className="block text-xs font-medium text-muted-foreground">Location</span>
@@ -80,7 +80,7 @@ export function Hero() {
             </span>
           </label>
 
-          <label className="flex items-center gap-3 border-b border-border px-6 py-5 md:border-b-0 md:border-r">
+          <label className="flex items-center gap-3 border-b border-border px-5 py-4 sm:px-6 sm:py-5 md:border-b-0 md:border-r">
             <CalendarDays className="h-5 w-5 shrink-0 text-primary" />
             <span className="w-full">
               <span className="block text-xs font-medium text-muted-foreground">Select Date</span>
@@ -91,7 +91,7 @@ export function Hero() {
             </span>
           </label>
 
-          <label className="flex items-center gap-3 border-b border-border px-6 py-5 md:border-b-0 md:border-r">
+          <label className="flex items-center gap-3 border-b border-border px-5 py-4 sm:px-6 sm:py-5 md:border-b-0 md:border-r">
             <Users className="h-5 w-5 shrink-0 text-primary" />
             <span className="w-full">
               <span className="block text-xs font-medium text-muted-foreground">Guests</span>
@@ -106,7 +106,7 @@ export function Hero() {
 
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 bg-primary px-10 py-5 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90"
+            className="flex items-center justify-center gap-2 bg-primary px-10 py-4 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90 sm:py-5"
           >
             <Search className="h-4 w-4" /> Search
           </button>
