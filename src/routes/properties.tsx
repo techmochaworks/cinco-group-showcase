@@ -5,7 +5,7 @@ import { PROPERTIES } from "@/data/site";
 
 const title = "Our Properties | The Cinco Group of Hotels, Hyderabad";
 const description =
-  "Five Cinco Group hotels across Hyderabad — Ameerpet, Kondapur, Begumpet, Gachibowli and Secunderabad. Compare rooms, locations and book direct.";
+  "Our Cinco Group hotels across Hyderabad — Ameerpet, Kondapur, Begumpet, Gachibowli and Secunderabad. Compare rooms, locations and book direct.";
 
 export const Route = createFileRoute("/properties")({
   head: () => ({
@@ -26,7 +26,7 @@ function PropertiesPage() {
     <>
       <PageHero
         eyebrow="Our Properties"
-        title="Five addresses across Hyderabad"
+        title="Multiple addresses across Hyderabad"
         intro="Each property is run to the same standard — clean rooms, honest pricing and a team that answers at any hour."
         image={PROPERTIES[1]!.images[0]!}
       />

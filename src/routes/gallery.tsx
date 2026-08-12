@@ -4,7 +4,7 @@ import { PROPERTIES } from "@/data/site";
 
 const title = "Gallery | The Cinco Group of Hotels, Hyderabad";
 const description =
-  "Rooms, banquet halls, dining and exteriors across all five Cinco Group hotels in Hyderabad.";
+  "Rooms, banquet halls, dining and exteriors across all Our Cinco Group hotels in Hyderabad.";
 
 const images = PROPERTIES.flatMap((p) =>
   p.images.slice(0, 9).map((src) => ({ src, name: p.name })),
@@ -30,7 +30,7 @@ function GalleryPage() {
       <PageHero
         eyebrow="Gallery"
         title="A look inside the group"
-        intro="Photographs from all five properties — rooms, banquet floors, dining spaces and lobbies."
+        intro="Photographs from all Our properties — rooms, banquet floors, dining spaces and lobbies."
         image={PROPERTIES[3]!.images[1]!}
       />
 

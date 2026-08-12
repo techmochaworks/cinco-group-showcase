@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { PROPERTIES } from "@/data/site";
 
 const slides = [
-  { image: PROPERTIES[1]!.images[0]!, title: "Stay Elevated in Hyderabad" },
-  { image: PROPERTIES[3]!.images[3]!, title: "Five Properties, One Standard" },
-  { image: PROPERTIES[0]!.images[1]!, title: "Comfort That Feels Like Home" },
+  { image: PROPERTIES[0]!.images[0]!, title: "Stay Elevated in Hyderabad" },
+  { image: PROPERTIES[1]!.images[1]!, title: "Multiple Properties, One Standard" },
+  { image: PROPERTIES[2]!.images[3]!, title: "Comfort That Feels Like Home" },
 ];
 
 export function Hero() {
@@ -20,16 +20,15 @@ export function Hero() {
 
   return (
     <section className="relative">
-      <div className="relative h-[560px] w-full overflow-hidden md:h-[640px]">
+      <div className="relative h-[760px] w-full overflow-hidden md:h-[760px]">
         {slides.map((s, i) => (
           <img
             key={s.image}
             src={s.image}
             alt={s.title}
             loading={i === 0 ? "eager" : "lazy"}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
-              i === index ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0"
+              }`}
           />
         ))}
         <div className="absolute inset-0 bg-linear-to-r from-deep/85 via-deep/55 to-transparent" />
@@ -42,12 +41,12 @@ export function Hero() {
             {slides[index]!.title}
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-deep-foreground/80">
-            Five thoughtfully located hotels across Hyderabad, blending modern luxury with
+            thoughtfully located hotels across Hyderabad, blending modern luxury with
             authentic Indian warmth — and priced for the way you travel.
           </p>
         </div>
 
-        <button
+        {/* <button
           aria-label="Previous slide"
           onClick={() => go(-1)}
           className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-background/85 text-foreground transition-colors hover:bg-background"
@@ -60,10 +59,10 @@ export function Hero() {
           className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-background/85 text-foreground transition-colors hover:bg-background"
         >
           <ChevronRight className="h-5 w-5" />
-        </button>
+        </button> */}
       </div>
 
-      <div className="relative z-10 mx-auto -mt-24 max-w-6xl px-5">
+      <div className="relative z-10 mx-auto -mt-35 max-w-6xl px-5">
         <form
           onSubmit={(e) => e.preventDefault()}
           className="grid grid-cols-1 overflow-hidden rounded-xl bg-card shadow-lift md:grid-cols-[1.1fr_1fr_0.9fr_auto]"

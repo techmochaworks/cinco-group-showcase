@@ -5,7 +5,7 @@ import { GROUP, PROPERTIES } from "@/data/site";
 
 const title = "About Us | The Cinco Group of Hotels, Hyderabad";
 const description =
-  "How five hotels across Hyderabad came to be run to one standard — the story, the people and the promises behind The Cinco Group.";
+  "How Our hotels across Hyderabad came to be run to one standard — the story, the people and the promises behind The Cinco Group.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -26,7 +26,7 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="One standard, five addresses"
+        title="One standard,Multiple addresses"
         image={PROPERTIES[0]!.images[3]!}
       />
 
@@ -70,7 +70,7 @@ function AboutPage() {
             },
             {
               t: "Answered at any hour",
-              d: "Front desks are staffed 24x7 across all five properties, including the early-train arrivals.",
+              d: "Front desks are staffed 24x7 across all Our properties, including the early-train arrivals.",
             },
           ].map((v) => (
             <div key={v.t} className="rounded-2xl bg-card p-8 shadow-soft">

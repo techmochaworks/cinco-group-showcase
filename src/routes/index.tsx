@@ -10,7 +10,7 @@ import { GalleryStrip } from "@/components/site/GalleryStrip";
 
 const title = "The Cinco Group of Hotels | Stays Across Hyderabad";
 const description =
-  "Five thoughtfully located hotels across Hyderabad. Modern rooms, banquet halls and corporate packages from The Cinco Group of Hotels.";
+  "Our thoughtfully located hotels across Hyderabad. Modern rooms, banquet halls and corporate packages from The Cinco Group of Hotels.";
 const ogImage = "https://i.postimg.cc/1XRwX3tF/2025-05-21.webp";
 
 export const Route = createFileRoute("/")({

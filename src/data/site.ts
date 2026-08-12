@@ -1,9 +1,9 @@
 export const GROUP = {
   name: "The Cinco Group of Hotels",
-  tagline: "Five Addresses. One Standard of Excellence.",
+  tagline: "Multiple Addresses. One Standard of Excellence.",
   about:
-    "The Cinco Group of Hotels represents the pinnacle of contemporary hospitality in Hyderabad. With five strategically located properties across the city's most sought-after destinations, we deliver exceptional accommodations, world-class amenities, and personalized service that exceeds expectations. Each hotel embodies our commitment to excellence, blending modern luxury with authentic Indian warmth to create unforgettable experiences for discerning travelers.",
-  phone: "+91 99999 00000",
+    "The Cinco Group of Hotels represents the pinnacle of contemporary hospitality in Hyderabad. With strategically located properties across the city's most sought-after destinations, we deliver exceptional accommodations, world-class amenities, and personalized service that exceeds expectations. Each hotel embodies our commitment to excellence, blending modern luxury with authentic Indian warmth to create unforgettable experiences for discerning travelers.",
+  phone: "+91 90146 32639",
   email: "stay@cincogroup.com",
   address: "Begumpet, Hyderabad – 500016, Telangana, India",
 };
@@ -18,33 +18,14 @@ export type Property = {
 };
 
 export const PROPERTIES: Property[] = [
-  {
-    name: "Super Townhouse THE CINCO HOTEL",
-    slug: "cinco-hotel",
-    area: "Ameerpet",
-    description:
-      "Our flagship address — compact, immaculate rooms a short drive from the business district, built for travellers who want a dependable base in the middle of everything.",
-    bookLink: "https://www.oyorooms.com/105415/",
-    images: [
-      "https://i.postimg.cc/762Lq8DF/2020-11-23.jpg",
-      "https://i.postimg.cc/zBgfqZ8m/2020-11-23.webp",
-      "https://i.postimg.cc/gJZ0GFdN/2020-11-23-1.webp",
-      "https://i.postimg.cc/nzDLnbZg/2020-11-23-2.webp",
-      "https://i.postimg.cc/Y9WStKks/2020-11-23-3.webp",
-      "https://i.postimg.cc/pTFdPbx7/2020-11-23-4.webp",
-      "https://i.postimg.cc/xCzd9DYF/2020-11-23-5.webp",
-      "https://i.postimg.cc/sXh23dsC/2023-05-23.webp",
-      "https://i.postimg.cc/MTQGz2q2/2023-05-23-1.webp",
-    ],
-  },
+
   {
     name: "FabHotel The Cinco Primera",
     slug: "cinco-primera",
     area: "Kondapur",
     description:
       "The most recent addition to the group. Larger rooms, warmer interiors and a breakfast service that regulars plan their mornings around.",
-    bookLink:
-      "https://www.fabhotels.com/hotels-in-hyderabad/fabhotel-the-cinco-primera-nptktbwh.html",
+    bookLink: "https://wa.me/919014632639",
     images: [
       "https://i.postimg.cc/1XRwX3tF/2025-05-21.webp",
       "https://i.postimg.cc/j54yR7Rk/2025-05-21-1.webp",
@@ -65,60 +46,60 @@ export const PROPERTIES: Property[] = [
       "https://i.postimg.cc/KzDtmMZj/2025-05-21-9.webp",
     ],
   },
+
   {
     name: "Super Townhouse 359 Begumpet",
     slug: "townhouse-359-begumpet",
     area: "Begumpet",
     description:
       "Quiet floors minutes from Begumpet station and the airport road — the property our long-stay corporate guests keep coming back to.",
-    bookLink: "https://www.oyorooms.com/105473/",
+    bookLink: "https://wa.me/919014632639",
     images: [
-      "https://i.postimg.cc/fyxzGcZ2/2023-05-24.webp",
-      "https://i.postimg.cc/prNVcGNm/2023-05-24-1.webp",
-      "https://i.postimg.cc/prDWwfxZ/2023-05-24-10.webp",
-      "https://i.postimg.cc/Y01r56kx/2023-05-24-11.webp",
-      "https://i.postimg.cc/j2zxpHKc/2023-05-24-12.webp",
-      "https://i.postimg.cc/4yzfD6ZN/2023-05-24-2.webp",
-      "https://i.postimg.cc/6qdWkrw3/2023-05-24-3.webp",
-      "https://i.postimg.cc/8chp2RDc/2023-05-24-4.webp",
-      "https://i.postimg.cc/GtkLWFrp/2023-05-24-5.webp",
-      "https://i.postimg.cc/wMhqCXHN/2023-05-24-6.webp",
-      "https://i.postimg.cc/QCp82Qs5/2023-05-24-7.webp",
-      "https://i.postimg.cc/C5jh3GYb/2023-05-24-8.webp",
-      "https://i.postimg.cc/zvnzsC5S/2023-05-24-9.webp",
-      "https://i.postimg.cc/ZY35vS3z/unnamed.webp",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832376847.jpg?k=5c60a685c25e05f9df5aa1169ae80ee790dc4cce9933c23b187eb8913fef55bf&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/655262724.jpg?k=ec553563128504cb31d8c3fc888dda2631b6837f5116efce0afaf4cefc7b601e&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/743066856.jpg?k=0765a507edfaa6009e5feeb3e1b7190c131ab1b1afbf1be0791821194bc78051&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694471647.jpg?k=b5b32e2566acd694c1744e2fd5bdac8630b6d10f3f156a38a1c0d437f26eded3&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832376822.jpg?k=827aa9b139faeadb61be53ad94d39a8aa659f1ffbe0f56192005e62612ca40e9&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/881601820.jpg?k=55c752ee0840bff9233ffdd191a246ebdbca1cd25c4c3f726e08100d483e290d&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/656579370.jpg?k=3fcad5ce8b44c78f67d6def3a90e09285c371e86800790a09992d6de6c8fa0a0&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/656579421.jpg?k=443fa09a302d315eca9ee594221d63175c416edf683a7f949eab8594c7be3286&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832376655.jpg?k=2e4748a65ecde111a64a0ff589ecdf963feb111cbbfe18bf841f4e75e1d180cc&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/881601817.jpg?k=7577d80a00d5c35e6b4f9a1c7fea38962438a2c59f13eefe25e881c87be3455b&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/655262705.jpg?k=8a5cc7704998044a7125bdd506fba55976cf37c6c537d90cc339d6e790372fbe&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832376800.jpg?k=d4cc46263a5fe32abacad2afaf3b946e744e1a30910d8a0e9dfc8b84b35756c0&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/881601822.jpg?k=f4bea21c4c5a5c02d80c3358e7b065f7cc122e6534dff551b4caac9ac6723d56&o=",
+      "https://cf.bstatic.com/xsdata/images/hotel/max1024x768/655262742.jpg?k=83066afda1d6956f707948a7de550d56f5c7511736ae7a037cac4270149ed094&o=",
     ],
   },
+
   {
-    name: "The Cinco Bliss",
-    slug: "cinco-bliss",
-    area: "Gachibowli",
+    name: "Super Townhouse THE CINCO HOTEL",
+    slug: "cinco-hotel",
+    area: "Ameerpet",
     description:
-      "Bright rooms, a banquet floor for small functions and a team that handles late arrivals without fuss.",
-    bookLink: "https://www.oyorooms.com/223489/",
+      "Our flagship address — compact, immaculate rooms a short drive from the business district, built for travellers who want a dependable base in the middle of everything.",
+    bookLink: "https://wa.me/919014632639",
     images: [
-      "https://i.postimg.cc/TPwHBTGW/202505280133514398-629c6a02-df34-43df-91a9-533bf730e6a2.avif",
-      "https://i.postimg.cc/4xwS8YCd/202505280133514398-7e9e1e81-d5fa-40e3-baef-82428bcf8f69.avif",
-      "https://i.postimg.cc/9Q1nxD34/202505280133514398-c95143a8-9166-41d4-bc79-cc6a659ba39d.avif",
-      "https://i.postimg.cc/m2YqHd8k/725232905.jpg",
-      "https://i.postimg.cc/QxQPT601/725233040.jpg",
-      "https://i.postimg.cc/xTv7zstH/725233079.jpg",
-      "https://i.postimg.cc/TYVSDkCn/725233088.jpg",
-      "https://i.postimg.cc/DyrDXCBq/725233099.jpg",
-      "https://i.postimg.cc/VLqTC7D4/725233116.jpg",
-      "https://i.postimg.cc/9FdS7xJL/725233148.jpg",
-      "https://i.postimg.cc/m2YqHd8p/725233151.jpg",
-      "https://i.postimg.cc/Cxw2HjQs/725233171.jpg",
-      "https://i.postimg.cc/htKYb95C/unnamed.webp",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826416075.jpg?k=38f345faefd521b1959f314d09bf459f7dd91b9265df9e70c5bca3f294d4efdc&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/617323707.jpg?k=d8dd1ddd3a50ce4c676eba9d549c4a4b37f5d5544cce0a09852a36569e1720a2&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/874181714.jpg?k=af8ae2b0d9f17189505311c45a39a2dbde8f3ab60124fd134cf4cf01fbd0885d&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/617358387.jpg?k=b0992a64a98ea346cdb68f3baa85daa21a1e25c6ed224ca076d89c9d4f9b7c8a&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826415902.jpg?k=6d907e5f63c33287224f390e3d109d2f490f759e0aa16358ff8cb49923176d44&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/874181700.jpg?k=a4ebb18ef425cb2222d13f716fda9edf684c77c81e45c37a1d8363575dda47db&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826415750.jpg?k=f51acfc8450dd9fa3197288b5c76cdc6b7d7b50cfa1a602187219d7f1d29b905&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/815155965.jpg?k=dc8f57c162858f094d4ad901bdfd33e0b52ea2ff59ea7f01385b1528bf78005c&o=",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826416094.jpg?k=57d49cac7b8071add357948cbca4bcccf74f633ba16d5af86b6b7c2f48abc750&o=",
     ],
   },
+
+
   {
     name: "Townhouse Near Secunderabad Railway Station",
     slug: "townhouse-secunderabad",
     area: "Secunderabad",
     description:
       "Two minutes from the railway station. Practical, spotless and open around the clock for guests arriving on the early trains.",
-    bookLink: "https://www.oyorooms.com/108004/",
+    bookLink: "https://wa.me/919014632639",
     images: [
       "https://i.postimg.cc/gJ7LzqfM/2020-11-28.webp",
       "https://i.postimg.cc/85YfpBqL/2020-11-28-1.webp",
@@ -179,6 +160,24 @@ export const TESTIMONIALS = [
     city: "Delhi",
     quote:
       "The Cinco Primera exceeded expectations — modern interiors, immaculate housekeeping and a team that remembers your name. Will book again on every Hyderabad visit.",
+  },
+  {
+    name: "Siddharth K.",
+    city: "Mumbai",
+    quote:
+      "Ameerpet is always bustling, but the Super Townhouse was a calm oasis. Fast Wi-Fi, great room service, and they even helped me figure out my travel itinerary for the next day.",
+  },
+  {
+    name: "Nandini Rao",
+    city: "Chennai",
+    quote:
+      "Stayed near Secunderabad Railway Station for a quick transit. Unbeatable convenience, very clean washrooms, and a hassle-free check-in experience despite my odd arrival hours.",
+  },
+  {
+    name: "Rohan & Sneha",
+    city: "Kochi",
+    quote:
+      "We hosted a small family get-together at one of their banquets. The management handled everything perfectly, the catering was fantastic, and the rooms provided were incredibly comfortable.",
   },
 ];
 

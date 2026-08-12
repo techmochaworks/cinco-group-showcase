@@ -1,9 +1,17 @@
 import { Quote, Star } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TESTIMONIALS } from "@/data/site";
 
 export function Testimonials() {
   const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % TESTIMONIALS.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   const t = TESTIMONIALS[active]!;
 
   return (

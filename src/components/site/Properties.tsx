@@ -9,7 +9,7 @@ export function Properties() {
           Our Properties
         </span>
         <h2 className="mt-5 font-display text-4xl font-extrabold text-foreground md:text-5xl">
-          Five Stays Across Hyderabad
+          Our Stays Across Hyderabad
         </h2>
       </div>
 

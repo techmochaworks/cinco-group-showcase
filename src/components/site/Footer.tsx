@@ -24,7 +24,7 @@ export function Footer() {
             Group of Hotels
           </p>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-deep-foreground/75">
-            Five hotels across Hyderabad, run to one standard since 2019.
+            Multiple hotels across Hyderabad, run to one standard since 2019.
           </p>
           <div className="mt-6 flex gap-3">
             {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (

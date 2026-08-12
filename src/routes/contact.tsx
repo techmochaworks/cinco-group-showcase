@@ -27,7 +27,7 @@ function ContactPage() {
       <PageHero
         eyebrow="Contact Us"
         title="Talk to us about your stay"
-        intro="Room bookings, banquet dates or corporate rates — one message reaches all five properties."
+        intro="Room bookings, banquet dates or corporate rates — one message reaches all Our properties."
         image={PROPERTIES[4]!.images[1]!}
       />
 

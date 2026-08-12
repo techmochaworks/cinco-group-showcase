@@ -39,7 +39,7 @@ export function Achievements() {
 
         <div className="relative">
           <img
-            src={PROPERTIES[2]!.images[2]}
+            src={PROPERTIES[0]!.images[1]}
             alt="The Cinco Group property interior"
             loading="lazy"
             className="h-[520px] w-full rounded-xl object-cover shadow-lift"
