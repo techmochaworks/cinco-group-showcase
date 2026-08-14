@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
-import { Founders } from "@/components/site/Founders";
 import { GROUP, PROPERTIES } from "@/data/site";
 
 const title = "About Us | The Cinco Group of Hotels, Hyderabad";
@@ -81,7 +80,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <Founders />
     </>
   );
 }
